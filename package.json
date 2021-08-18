@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress-open": "./node_modules/.bin/cypress open"
+    "cypress-open": "./node_modules/.bin/cypress open",
+    "cypress-run": "./node_modules/.bin/cypress run",
+    "cypress-electron": "./node_modules/.bin/cypress run --headed",
+    "cypress-browser": "./node_modules/.bin/cypress run --browser chrome",
+    "cypress-individual": "./node_modules/.bin/cypress run --spec cypress/integration/webdriver-uni/contact-us.js"
   },
   "author": "",
   "license": "ISC",
