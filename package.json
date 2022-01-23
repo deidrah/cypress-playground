@@ -9,7 +9,12 @@
     "cypress-run": "./node_modules/.bin/cypress run",
     "cypress-electron": "./node_modules/.bin/cypress run --headed",
     "cypress-browser": "./node_modules/.bin/cypress run --browser chrome",
-    "cypress-individual": "./node_modules/.bin/cypress run --spec cypress/integration/webdriver-uni/contact-us.js"
+    "cypress-individual": "./node_modules/.bin/cypress run --spec cypress/integration/webdriver-uni/contact-us.js",
+    "triggerAllTests-headless": "npx cypress run",
+    "triggerAllTests-headed": "npx cypress run --headed",
+    "triggerAllTests-chrome": "npx cypress run --browser chrome",
+    "triggerAllTests-dashboard": "npx cypress run --record --key 8ea00e6c-0795-4bca-ad07-ed0a158d3f30",
+    "triggerAllTests-webdriveruni": "npx cypress run --spec cypress/integration/webdriver-uni/*"
   },
   "author": "",
   "license": "ISC",
