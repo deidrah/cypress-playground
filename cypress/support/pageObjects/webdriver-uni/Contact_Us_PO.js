@@ -12,5 +12,7 @@ class Contact_Us_PO {
 }
 //To trigger webdriveruniversity contact us test via terminal window:
 //./node_modules/.bin/cypress run --spec cypress/integration/webdriver-uni/contact-us.js
+//merging reports
+//npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml
 
 export default Contact_Us_PO;

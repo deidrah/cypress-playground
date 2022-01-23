@@ -11,5 +11,9 @@
     "webdriveruni_homepage": "http://www.webdriveruniversity.com",
     "first_name": "sarah"
   },
-  "projectId": "wfs8jw"
+  "projectId": "wfs8jw",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+  }
 }
