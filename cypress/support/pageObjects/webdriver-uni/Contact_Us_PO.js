@@ -5,7 +5,12 @@ class Contact_Us_PO {
       cy.get('[name="email"]').type(email)
       cy.get('textarea.feedback-input').type(comment)
       cy.get('[type="submit"]').click();
-      cy.get($selector).pause().contains(textToLocate, {timeout: 60000})
+      cy.get($selector).contains(textToLocate, {timeout: 60000})
+      cy.screenshot();
+      cy.screenshot("Made a contact us form submission");
   }
 }
+//To trigger webdriveruniversity contact us test via terminal window:
+//./node_modules/.bin/cypress run --spec cypress/integration/webdriver-uni/contact-us.js
+
 export default Contact_Us_PO;
